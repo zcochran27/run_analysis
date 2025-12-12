@@ -1,0 +1,16 @@
+numpy>=1.26
+pandas>=2.2
+requests
+ffmpeg
+tqdm
+
+# Soccer data and modeling
+kloppy==3.18.0
+
+# Machine learning and stats
+scikit-learn
+scipy
+seaborn
+matplotlib
+mplsoccer
+statsmodels
