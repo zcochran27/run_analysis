@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Overview</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            color: #222;
+        }
+        h1, h2 {
+            color: #111;
+        }
+        .links {
+            margin-top: 30px;
+        }
+        .link-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Run Boy Run (An Analysis of Runs in Behind in Soccer)</h1>
+
+    <h2>Abstract</h2>
+    <p>
+    Off-the-ball runs in behind are a fundamental attacking mechanism in soccer, influencing both the creation of goal-scoring opportunities and the disruption of defensive structures. This study analyzes the characteristics of such runs and their relationship to shot creation using a large-scale spatiotemporal tracking dataset provided by SkillCorner. By integrating player-tracking data with event-level annotations of off-ball runs, we reconstructed possessions, identified whether each possession led to a shot, and extracted a comprehensive set of run-level features, including spatial endpoints, run angle, speed, defensive line interactions, and positional relationships to the ball.
+    </p>
+
+    <p>
+    We first established that possessions containing at least one run in behind were 14% more likely to result in a shot, confirming their attacking value. To identify which run characteristics predict shot outcomes, we conducted a series of one-variable logistic regression models, supported by distributional comparisons and correlation analysis to detect feature relevance and redundancy. Several features emerged as significant predictors of shot-producing possessions: end location of the run, distance covered, width change during the run, diagonal run angle, change in defensive line height, and proximity of the runner to the ball carrier.
+    </p>
+
+    <p>
+    Analysis of shot-leading versus non-shot-leading runs revealed consistent patterns. Runs that travel longer distances, move centrally, end near the top of the penalty box, follow diagonal trajectories, create measurable defensive-line displacement, and occur closer to the player in possession all show increased likelihood of producing a shot. These findings align with tactical intuition around counterattacks, striker movement, and defensive manipulation.
+    </p>
+
+    <p>
+    While the linear models used cannot fully capture the complex interdependence between features, this work provides evidence-based insights into what constitutes an effective run in behind. The results offer a foundation for future modeling using more expressive nonlinear methods and provide practical guidance for coaching, player development, and data-driven tactical analysis.
+    </p>
+
+    <div class="links">
+        <h2>Project Versions</h2>
+
+        <div class="link-card">
+            <h3>📊 Report Version (No Code)</h3>
+            <p>
+                Clean, presentation-ready version containing figures, results,
+                and interpretation without code cells.
+            </p>
+            <a href="run_analysis_no_code.html">View Report</a>
+        </div>
+
+        <div class="link-card">
+            <h3>💻 Full Analysis (With Code)</h3>
+            <p>
+                Complete notebook including data processing, modeling,
+                and visualization code.
+            </p>
+            <a href="run_analysis_with_code.html">View Full Notebook</a>
+        </div>
+    </div>
+
+</body>
+</html>
